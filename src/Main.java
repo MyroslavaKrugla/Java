@@ -3,19 +3,18 @@ import java.util.Scanner;
 
 public class Main {
 
-    /**
-     * It is main func
-     */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
-        float first, second, result;
+        int first, second = 50;
         System.out.print("enter first num: ");
-        first = num.nextFloat();
-        System.out.print("enter second num: ");
-        second = num.nextFloat();
-        result = first * second;
+        first = num.nextInt();
 
-        System.out.println("Result is: " + result);
+        if (first >= second) {
+            System.out.print("first condition");
+        } else if (first == 45) {
+            System.out.print("Num is equal 45");
+        } else {
+            System.out.print("Num is lower than " + second);
+        }
     }
 }
