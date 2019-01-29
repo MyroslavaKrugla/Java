@@ -6,4 +6,14 @@ public class Person
         {
             System.out.println("Hello, " + name);
         }
-    }
+
+        public Person ()
+        {
+        }
+    public Person (int h)
+        {
+            int height = h;
+        }
+
+}
+
